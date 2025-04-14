@@ -6,6 +6,10 @@ body {
   font-style: normal;
 }
 
+:root {
+  --blue-color: #00acdc;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -33,7 +37,7 @@ body {
   margin-left: 20px;
 }
 
-.nav-item:first-child {
+.nav-item--first {
   margin-left: 0;
 }
 
@@ -49,19 +53,15 @@ body {
   text-transform: uppercase;
 }
 
-:root {
-  --blue-color: #00acdc;
-}
-
 .nav-link:hover {
   color: var(--blue-color);
 }
 
-.nav-link.is-active {
+.nav-link--active {
   color: var(--blue-color);
 }
 
-.nav-link.is-active::after {
+.nav-link--active::after {
   content: '';
   position: absolute;
   left: 0;
